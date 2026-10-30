@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #242334;
+  background: #fcfbfa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --page: #fcfbfa;
+  --surface: #fff;
+  --text: #242334;
+  --muted: #777586;
+  --border: #eceaf0;
+  --purple: #6a52d3;
+  --purple-dark: #5641bb;
+  --lavender: #f0edff;
+  --shadow: 0 16px 48px rgba(48, 39, 93, .08);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --page: #171622;
+  --surface: #211f2e;
+  --text: #f2f0f9;
+  --muted: #aaa7bb;
+  --border: #393647;
+  --purple: #a795ff;
+  --purple-dark: #8d79ef;
+  --lavender: #322c4b;
+  --shadow: 0 16px 48px rgba(0, 0, 0, .22);
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; scroll-padding-top: 85px; }
+body { margin: 0; min-width: 320px; background: var(--page); color: var(--text); }
+body, button, input, textarea, select { font-family: 'DM Sans', 'Segoe UI', sans-serif; }
+button, input, textarea, select { font-size: inherit; }
+button { color: inherit; }
+a { color: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid rgba(106, 82, 211, .35); outline-offset: 3px; }
+::selection { color: #372b77; background: #e4dfff; }
